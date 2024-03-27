@@ -1,0 +1,26 @@
+{
+  "context": {
+    "domain": "ONDC:RET10",
+    "location": {
+      "city": {
+        "code": "std:999"
+      },
+      "country": {
+        "code": "IND"
+      }
+    },
+    "action": "status",
+    "version": "2.0.2",
+    "bap_id": "devapi.proxtera.app",
+    "bap_uri": "https://devapi.proxtera.app/ondc",
+    "transaction_id": "1d41a4c4-1a3c-4114-b14e-19f0f363a76d",
+    "message_id": "c9080ac5-c93c-4b0c-9ab7-b45757ff8677",
+    "timestamp": "2024-03-27T07:14:09.303Z",
+    "bpp_id": "ondcpreprodb2b.rapidor.co",
+    "bpp_uri": "https://ondcpreprodb2b.rapidor.co/v1/ondc/seller",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "order_id": "PO6202201031"
+  }
+}

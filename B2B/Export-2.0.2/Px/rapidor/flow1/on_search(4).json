@@ -1,0 +1,174 @@
+{
+  "context": {
+    "domain": "ONDC:RET10",
+    "location": {
+      "city": {
+        "code": "std:999"
+      },
+      "country": {
+        "code": "IND"
+      }
+    },
+    "version": "2.0.2",
+    "action": "on_search",
+    "bap_id": "devapi.proxtera.app",
+    "bap_uri": "https://devapi.proxtera.app/ondc",
+    "transaction_id": "842f249c-4c32-4a4f-9ec6-694fe2ed6c35",
+    "message_id": "9bc3db61-6497-4122-9f82-5ff5d338aac2",
+    "timestamp": "2024-03-27T06:28:55.071Z",
+    "ttl": "PT30S",
+    "bpp_id": "preprod.xpressbaazaar.com",
+    "bpp_uri": "https://preprod.xpressbaazaar.com/v1/",
+    "core_version": "1.1.0"
+  },
+  "message": {
+    "catalog": {
+      "bpp/fulfillments": [
+        {
+          "id": "1",
+          "type": "Delivery"
+        },
+        {
+          "id": "2",
+          "type": "Self-Pickup"
+        },
+        {
+          "id": "3",
+          "type": "Delivery and Self-Pickup"
+        }
+      ],
+      "bpp/descriptor": {
+        "name": "Xpress Bazzar",
+        "symbol": "https://ondc-marketplace.s3.amazonaws.com/images/c26d7994-5238-4479-bc50-e2b454bb1867.png",
+        "short_desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+        "long_desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+        "images": [
+          "https://ondc-marketplace.s3.amazonaws.com/images/c26d7994-5238-4479-bc50-e2b454bb1867.png"
+        ]
+      },
+      "bpp/providers": [
+        {
+          "id": "3a36ba5d-64ba-43e8-972e-83dce0dd25ad",
+          "descriptor": {
+            "name": "Shubh Private ltd",
+            "symbol": "https://ondc-marketplace.s3.ap-south-1.amazonaws.com/images/7854d04d-b6ae-44e1-9299-4534baedf78b.jpg",
+            "short_desc": "this is test product",
+            "long_desc": "this is long description",
+            "images": [
+              "https://ondc-marketplace.s3.ap-south-1.amazonaws.com/images/7854d04d-b6ae-44e1-9299-4534baedf78b.jpg"
+            ]
+          },
+          "time": {
+            "label": "enable",
+            "timestamp": "2024-03-27T06:28:55.071Z"
+          },
+          "@ondc/org/fssai_license_no": "34562896758",
+          "ttl": "P1D",
+          "locations": [
+            {
+              "id": "3a36ba5d-64ba-43e8-972e-83dce0dd25ad",
+              "gps": "28.553340, 77.399870",
+              "address": {
+                "locality": "gautam buddha",
+                "street": "Shop No K224D, near Ginger Hotel, Rasoolpur, Sector 63",
+                "city": "Noida",
+                "area_code": "201301",
+                "state": "UP"
+              },
+              "circle": {
+                "gps": "28.553340, 77.399870",
+                "radius": {
+                  "unit": "km",
+                  "value": "3000"
+                }
+              },
+              "time": {
+                "days": "1,2,3,4,5,6,7",
+                "schedule": {
+                  "holidays": []
+                },
+                "range": {
+                  "start": "1000",
+                  "end": "1900"
+                }
+              }
+            }
+          ],
+          "fulfillments": [
+            {
+              "contact": {
+                "phone": "7845356902",
+                "email": "shub123@gmail.com"
+              }
+            }
+          ],
+          "tags": [
+            {
+              "code": "serviceability",
+              "list": [
+                {
+                  "code": "location",
+                  "value": "3a36ba5d-64ba-43e8-972e-83dce0dd25ad"
+                },
+                {
+                  "code": "category",
+                  "value": "Microwave Oven"
+                },
+                {
+                  "code": "type",
+                  "value": "12"
+                },
+                {
+                  "code": "val",
+                  "value": "3000"
+                },
+                {
+                  "code": "unit",
+                  "value": "km"
+                }
+              ]
+            }
+          ],
+          "items": [
+            {
+              "id": "d3d9a3e4-8c9b-46a3-abc1-93c944d9b70c",
+              "descriptor": {
+                "name": "ST Microwave",
+                "symbol": "https://ondc-marketplace.s3.ap-south-1.amazonaws.com/images/6e97d0f5-fad3-4cac-a9c3-747555eafbe9.jpg",
+                "short_desc": "this is test product",
+                "long_desc": "this is long description",
+                "images": [
+                  "https://ondc-marketplace.s3.ap-south-1.amazonaws.com/images/6e97d0f5-fad3-4cac-a9c3-747555eafbe9.jpg"
+                ],
+                "code": "5:TestTest"
+              },
+              "quantity": {
+                "available": {
+                  "count": "12"
+                },
+                "maximum": {
+                  "count": "12"
+                }
+              },
+              "price": {
+                "currency": "INR",
+                "value": "570",
+                "maximum_value": "600.00"
+              },
+              "category_id": "Microwave Oven",
+              "fulfillment_id": "1",
+              "location_id": "3a36ba5d-64ba-43e8-972e-83dce0dd25ad",
+              "@ondc/org/returnable": false,
+              "@ondc/org/cancellable": true,
+              "@ondc/org/return_window": "P3D",
+              "@ondc/org/seller_pickup_return": false,
+              "@ondc/org/time_to_ship": "P3D",
+              "@ondc/org/available_on_cod": true,
+              "@ondc/org/contact_details_consumer_care": "Shubh Private ltd,shub123@gmail.com,7845356902"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

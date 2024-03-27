@@ -1,0 +1,52 @@
+{
+  "context": {
+    "domain": "ONDC:RET10",
+    "location": {
+      "city": {
+        "code": "std:999"
+      },
+      "country": {
+        "code": "IND"
+      }
+    },
+    "action": "on_search",
+    "version": "2.0.2",
+    "bap_id": "devapi.proxtera.app",
+    "bap_uri": "https://devapi.proxtera.app/ondc",
+    "transaction_id": "842f249c-4c32-4a4f-9ec6-694fe2ed6c35",
+    "message_id": "9bc3db61-6497-4122-9f82-5ff5d338aac2",
+    "timestamp": "2024-03-27T06:28:55.071Z",
+    "bpp_id": "preprod-seller-api.proxtera.app",
+    "bpp_uri": "https://preprod-seller-api.proxtera.app",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "catalog": {
+      "fulfillments": [
+        {
+          "id": "1",
+          "type": "Delivery"
+        },
+        {
+          "id": "2",
+          "type": "Self-Pickup"
+        }
+      ],
+      "providers": [],
+      "payments": [
+        {
+          "id": "1",
+          "type": "PRE-FULFILLMENT"
+        },
+        {
+          "id": "2",
+          "type": "ON-FULFILLMENT"
+        },
+        {
+          "id": "3",
+          "type": "POST-FULFILLMENT"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,863 @@
+{
+  "context": {
+    "domain": "ONDC:RET10",
+    "location": {
+      "city": {
+        "code": "std:999"
+      },
+      "country": {
+        "code": "IND"
+      }
+    },
+    "action": "on_search",
+    "version": "2.0.2",
+    "bap_id": "devapi.proxtera.app",
+    "bap_uri": "https://devapi.proxtera.app/ondc",
+    "bpp_id": "preprod-seller.signcatch.com",
+    "bpp_uri": "https://preprod-seller.signcatch.com/",
+    "transaction_id": "849e9952-1a24-44e2-a34d-13100e644b32",
+    "message_id": "cf41978e-2fb2-422a-9410-549537ab20c1",
+    "timestamp": "2024-03-27T07:21:44.758Z",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "catalog": {
+      "fulfillments": [
+        {
+          "id": "1",
+          "type": "Delivery"
+        }
+      ],
+      "payments": [
+        {
+          "id": "1",
+          "type": "PRE-FULFILLMENT"
+        },
+        {
+          "id": "2",
+          "type": "ON-FULFILLMENT"
+        },
+        {
+          "id": "3",
+          "type": "POST-FULFILLMENT"
+        }
+      ],
+      "descriptor": {
+        "name": "SIGNCATCH SHOP",
+        "short_desc": "Signcatch ONDC B2B Marketplace",
+        "long_desc": "Signcatch ONDC B2B Marketplace",
+        "images": [
+          {
+            "url": "https://uploads-ssl.webflow.com/5ee734bc7580a19b8d94a02a/6419c2e298a40bd3bbb93d2c_Frame%204%20(1).jpg"
+          }
+        ]
+      },
+      "providers": [
+        {
+          "id": "SW10000369",
+          "descriptor": {
+            "name": "Praveen Wholesale Test",
+            "code": "SW10000369",
+            "short_desc": "Praveen Wholesale Test",
+            "long_desc": "Praveen Wholesale Test",
+            "images": [
+              {
+                "url": "https://storage.googleapis.com/awstoazures3/superadmin/staging/wholesalers/logo/1688819916930BechLogo.jpg"
+              }
+            ]
+          },
+          "locations": [
+            {
+              "id": "LSIN000369",
+              "gps": "28.568813,77.160378",
+              "address": "C-18, 3rd Floor, C block Market, Block C, Vasant Vihar, New Delhi, Delhi 110057, India,NewDelhi",
+              "city": {
+                "name": "NewDelhi",
+                "code": "std:011"
+              },
+              "state": {
+                "code": "DL"
+              },
+              "country": {
+                "code": "IND"
+              },
+              "area_code": "110057"
+            }
+          ],
+          "tags": [
+            {
+              "descriptor": {
+                "code": "serviceability"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "location"
+                  },
+                  "value": "LSIN000369"
+                },
+                {
+                  "descriptor": {
+                    "code": "category"
+                  },
+                  "value": "RET10-*"
+                },
+                {
+                  "descriptor": {
+                    "code": "type"
+                  },
+                  "value": "10"
+                },
+                {
+                  "descriptor": {
+                    "code": "val"
+                  },
+                  "value": "600.0"
+                },
+                {
+                  "descriptor": {
+                    "code": "unit"
+                  },
+                  "value": "km"
+                }
+              ]
+            },
+            {
+              "descriptor": {
+                "code": "seller_terms"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "gst_credit_invoice"
+                  },
+                  "value": "N"
+                }
+              ]
+            },
+            {
+              "descriptor": {
+                "code": "seller_id"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "seller_id_code"
+                  },
+                  "value": "gst"
+                },
+                {
+                  "descriptor": {
+                    "code": "seller_id_no"
+                  },
+                  "value": "22AABCU9603R1ZX"
+                }
+              ]
+            }
+          ],
+          "items": [
+            {
+              "id": "4602",
+              "descriptor": {
+                "name": "Suffderma Unlock Brightening Serum",
+                "code": "4:3304",
+                "short_desc": "Suffderma Unlock Brightening Serum",
+                "long_desc": "Suffderma Unlock Brightening Serum",
+                "images": [
+                  {
+                    "url": "https://storage.googleapis.com/awstoazures3/signcatch-master/production/products/images/11258/1634623966965Suffderma-Unlock-Brightening-Serum-200ml-jpg"
+                  }
+                ]
+              },
+              "price": {
+                "currency": "INR",
+                "value": "600.00",
+                "maximum_value": "695.0"
+              },
+              "quantity": {
+                "unitized": {
+                  "measure": {
+                    "unit": "litre",
+                    "value": "200"
+                  }
+                },
+                "available": {
+                  "measure": {
+                    "unit": "litre",
+                    "value": "200"
+                  },
+                  "count": "485"
+                },
+                "maximum": {
+                  "measure": {
+                    "unit": "litre",
+                    "value": "200"
+                  },
+                  "count": "485"
+                }
+              },
+              "category_ids": [
+                "RET10-1014"
+              ],
+              "fulfillment_ids": [
+                "1"
+              ],
+              "location_ids": [
+                "LSIN000369"
+              ],
+              "payment_ids": [
+                "2"
+              ],
+              "cancellation_terms": [
+                {
+                  "fulfillment_state": {
+                    "descriptor": {
+                      "code": "Pending"
+                    }
+                  },
+                  "cancellation_fee": {
+                    "percentage": "0"
+                  },
+                  "reason_required": false
+                },
+                {
+                  "fulfillment_state": {
+                    "descriptor": {
+                      "code": "Packed"
+                    }
+                  },
+                  "cancellation_fee": {
+                    "percentage": "0"
+                  },
+                  "reason_required": false
+                }
+              ],
+              "return_terms": [
+                {
+                  "fulfillment_state": {
+                    "descriptor": {
+                      "code": "Order-delivered"
+                    }
+                  },
+                  "return_eligible": true,
+                  "return_time": {
+                    "duration": "P2D"
+                  },
+                  "fulfillment_managed_by": "seller",
+                  "return_location": {
+                    "gps": "28.568813,77.160378",
+                    "address": "C-18, 3rd Floor, C block Market, Block C, Vasant Vihar, New Delhi, Delhi 110057, India,NewDelhi, NewDelhi, Delhi, India-110057"
+                  }
+                }
+              ],
+              "replacement_terms": [
+                {
+                  "replace_within": "P0D"
+                }
+              ],
+              "matched": "true",
+              "recommended": "true",
+              "tags": [
+                {
+                  "descriptor": {
+                    "code": "g2"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "time_to_ship"
+                      },
+                      "value": "P2D"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "cancellable"
+                      },
+                      "value": "true"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "tax_rate"
+                      },
+                      "value": "28"
+                    }
+                  ]
+                },
+                {
+                  "descriptor": {
+                    "code": "g3"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "brand"
+                      },
+                      "value": "Suffderma"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "pack_size"
+                      },
+                      "value": "1"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "num_price_slabs"
+                      },
+                      "value": "2"
+                    }
+                  ]
+                },
+                {
+                  "descriptor": {
+                    "code": "price_slab"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "min_pack_size"
+                      },
+                      "value": "5"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "max_pack_size"
+                      },
+                      "value": "9"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "unit_sale_price"
+                      },
+                      "value": "600.0"
+                    }
+                  ]
+                },
+                {
+                  "descriptor": {
+                    "code": "price_slab"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "min_pack_size"
+                      },
+                      "value": "10"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "max_pack_size"
+                      },
+                      "value": ""
+                    },
+                    {
+                      "descriptor": {
+                        "code": "unit_sale_price"
+                      },
+                      "value": "550.0"
+                    }
+                  ]
+                },
+                {
+                  "descriptor": {
+                    "code": "origin"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "country"
+                      },
+                      "value": "IND"
+                    }
+                  ]
+                }
+              ],
+              "creator": {
+                "descriptor": {
+                  "name": "AnaPure Biocos",
+                  "contact": {
+                    "name": "Support Team",
+                    "email": "support@signcatch.com",
+                    "phone": "9888887803",
+                    "address": {
+                      "full": "Anapure Biocos,SCO 911, Industrial Area Phase II, Chandigarh, 160002"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "id": "4603",
+              "descriptor": {
+                "name": "Nutorio Nutri Mix 15gm",
+                "code": "4:0813",
+                "short_desc": "Nutorio Nutri Mix 15gm",
+                "long_desc": "Nutorio Nutri Mix 15gm",
+                "images": [
+                  {
+                    "url": "https://storage.googleapis.com/awstoazures3/signcatch-master/production/products/images/11681/1636365023998Nutrimix-jpg"
+                  }
+                ]
+              },
+              "price": {
+                "currency": "INR",
+                "value": "15.00",
+                "maximum_value": "16.0"
+              },
+              "quantity": {
+                "unitized": {
+                  "measure": {
+                    "unit": "gram",
+                    "value": "15"
+                  }
+                },
+                "available": {
+                  "measure": {
+                    "unit": "gram",
+                    "value": "15"
+                  },
+                  "count": "498"
+                },
+                "maximum": {
+                  "measure": {
+                    "unit": "gram",
+                    "value": "15"
+                  },
+                  "count": "498"
+                }
+              },
+              "category_ids": [
+                "RET10-1038"
+              ],
+              "fulfillment_ids": [
+                "1"
+              ],
+              "location_ids": [
+                "LSIN000369"
+              ],
+              "payment_ids": [
+                "2"
+              ],
+              "cancellation_terms": [
+                {
+                  "fulfillment_state": {
+                    "descriptor": {
+                      "code": "Pending"
+                    }
+                  },
+                  "cancellation_fee": {
+                    "percentage": "0"
+                  },
+                  "reason_required": false
+                },
+                {
+                  "fulfillment_state": {
+                    "descriptor": {
+                      "code": "Packed"
+                    }
+                  },
+                  "cancellation_fee": {
+                    "percentage": "0"
+                  },
+                  "reason_required": false
+                }
+              ],
+              "return_terms": [
+                {
+                  "fulfillment_state": {
+                    "descriptor": {
+                      "code": "Order-delivered"
+                    }
+                  },
+                  "return_eligible": true,
+                  "return_time": {
+                    "duration": "P2D"
+                  },
+                  "fulfillment_managed_by": "seller",
+                  "return_location": {
+                    "gps": "28.568813,77.160378",
+                    "address": "C-18, 3rd Floor, C block Market, Block C, Vasant Vihar, New Delhi, Delhi 110057, India,NewDelhi, NewDelhi, Delhi, India-110057"
+                  }
+                }
+              ],
+              "replacement_terms": [
+                {
+                  "replace_within": "P2D"
+                }
+              ],
+              "matched": "true",
+              "recommended": "true",
+              "tags": [
+                {
+                  "descriptor": {
+                    "code": "g2"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "time_to_ship"
+                      },
+                      "value": "P2D"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "cancellable"
+                      },
+                      "value": "false"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "tax_rate"
+                      },
+                      "value": "12"
+                    }
+                  ]
+                },
+                {
+                  "descriptor": {
+                    "code": "g3"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "brand"
+                      },
+                      "value": "Nutorio"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "pack_size"
+                      },
+                      "value": "1"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "num_price_slabs"
+                      },
+                      "value": "2"
+                    }
+                  ]
+                },
+                {
+                  "descriptor": {
+                    "code": "price_slab"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "min_pack_size"
+                      },
+                      "value": "2"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "max_pack_size"
+                      },
+                      "value": "6"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "unit_sale_price"
+                      },
+                      "value": "15.0"
+                    }
+                  ]
+                },
+                {
+                  "descriptor": {
+                    "code": "price_slab"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "min_pack_size"
+                      },
+                      "value": "7"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "max_pack_size"
+                      },
+                      "value": ""
+                    },
+                    {
+                      "descriptor": {
+                        "code": "unit_sale_price"
+                      },
+                      "value": "14.0"
+                    }
+                  ]
+                },
+                {
+                  "descriptor": {
+                    "code": "origin"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "country"
+                      },
+                      "value": "IND"
+                    }
+                  ]
+                }
+              ],
+              "creator": {
+                "descriptor": {
+                  "name": "SNACKO DISTRIBUTORS",
+                  "contact": {
+                    "name": "Support Team",
+                    "email": "support@signcatch.com",
+                    "phone": "1800210211",
+                    "address": {
+                      "full": "Khasra no-126, Dhargal, Delhi Meerut road, opposite guldhar, Ghaziabad, Uttar Pradesh 201002"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "id": "4604",
+              "descriptor": {
+                "name": "Nutorio Trail Mix 15gm",
+                "code": "4:0813",
+                "short_desc": "Nutorio Trail Mix 15gm",
+                "long_desc": "Nutorio Trail Mix 15gm",
+                "images": [
+                  {
+                    "url": "https://storage.googleapis.com/awstoazures3/signcatch-master/production/products/images/11682/1636365197638Trail-Mix-1-jpg"
+                  }
+                ]
+              },
+              "price": {
+                "currency": "INR",
+                "value": "15.00",
+                "maximum_value": "16.0"
+              },
+              "quantity": {
+                "unitized": {
+                  "measure": {
+                    "unit": "unit",
+                    "value": "15"
+                  }
+                },
+                "available": {
+                  "measure": {
+                    "unit": "unit",
+                    "value": "15"
+                  },
+                  "count": "500"
+                },
+                "maximum": {
+                  "measure": {
+                    "unit": "unit",
+                    "value": "15"
+                  },
+                  "count": "500"
+                }
+              },
+              "category_ids": [
+                "RET10-1038"
+              ],
+              "fulfillment_ids": [
+                "1"
+              ],
+              "location_ids": [
+                "LSIN000369"
+              ],
+              "payment_ids": [
+                "2"
+              ],
+              "cancellation_terms": [
+                {
+                  "fulfillment_state": {
+                    "descriptor": {
+                      "code": "Pending"
+                    }
+                  },
+                  "cancellation_fee": {
+                    "percentage": "0"
+                  },
+                  "reason_required": false
+                },
+                {
+                  "fulfillment_state": {
+                    "descriptor": {
+                      "code": "Packed"
+                    }
+                  },
+                  "cancellation_fee": {
+                    "percentage": "0"
+                  },
+                  "reason_required": false
+                }
+              ],
+              "return_terms": [
+                {
+                  "fulfillment_state": {
+                    "descriptor": {
+                      "code": "Order-delivered"
+                    }
+                  },
+                  "return_eligible": true,
+                  "return_time": {
+                    "duration": "P2D"
+                  },
+                  "fulfillment_managed_by": "seller",
+                  "return_location": {
+                    "gps": "28.568813,77.160378",
+                    "address": "C-18, 3rd Floor, C block Market, Block C, Vasant Vihar, New Delhi, Delhi 110057, India,NewDelhi, NewDelhi, Delhi, India-110057"
+                  }
+                }
+              ],
+              "replacement_terms": [
+                {
+                  "replace_within": "P2D"
+                }
+              ],
+              "matched": "true",
+              "recommended": "true",
+              "tags": [
+                {
+                  "descriptor": {
+                    "code": "g2"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "time_to_ship"
+                      },
+                      "value": "P2D"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "cancellable"
+                      },
+                      "value": "false"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "tax_rate"
+                      },
+                      "value": "12"
+                    }
+                  ]
+                },
+                {
+                  "descriptor": {
+                    "code": "g3"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "brand"
+                      },
+                      "value": "Nutorio"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "pack_size"
+                      },
+                      "value": "1"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "num_price_slabs"
+                      },
+                      "value": "2"
+                    }
+                  ]
+                },
+                {
+                  "descriptor": {
+                    "code": "price_slab"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "min_pack_size"
+                      },
+                      "value": "1"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "max_pack_size"
+                      },
+                      "value": "4"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "unit_sale_price"
+                      },
+                      "value": "15.0"
+                    }
+                  ]
+                },
+                {
+                  "descriptor": {
+                    "code": "price_slab"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "min_pack_size"
+                      },
+                      "value": "5"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "max_pack_size"
+                      },
+                      "value": ""
+                    },
+                    {
+                      "descriptor": {
+                        "code": "unit_sale_price"
+                      },
+                      "value": "13.0"
+                    }
+                  ]
+                },
+                {
+                  "descriptor": {
+                    "code": "origin"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "country"
+                      },
+                      "value": "IND"
+                    }
+                  ]
+                }
+              ],
+              "creator": {
+                "descriptor": {
+                  "name": "SNACKO DISTRIBUTORS",
+                  "contact": {
+                    "name": "Support Team",
+                    "email": "support@signcatch.com",
+                    "phone": "1800210211",
+                    "address": {
+                      "full": "Khasra no-126, Dhargal, Delhi Meerut road, opposite guldhar, Ghaziabad, Uttar Pradesh 201002"
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "ttl": "P1D",
+          "fulfillments": [
+            {
+              "contact": {
+                "email": "ondcsupport@signcatch.com",
+                "phone": "01143099716"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

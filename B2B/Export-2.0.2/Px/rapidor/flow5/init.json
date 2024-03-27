@@ -1,0 +1,162 @@
+{
+  "context": {
+    "domain": "ONDC:RET10",
+    "location": {
+      "city": {
+        "code": "std:999"
+      },
+      "country": {
+        "code": "IND"
+      }
+    },
+    "action": "init",
+    "version": "2.0.2",
+    "bap_id": "devapi.proxtera.app",
+    "bap_uri": "https://devapi.proxtera.app/ondc",
+    "transaction_id": "01741c51-fa2c-4d6d-8c48-f5e02c978d25",
+    "message_id": "6fd3cfa4-b6c9-4d4e-92ec-a35eca7dc512",
+    "timestamp": "2024-03-27T08:27:50.321Z",
+    "bpp_id": "ondcpreprodb2b.rapidor.co",
+    "bpp_uri": "https://ondcpreprodb2b.rapidor.co/v1/ondc/seller",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "order": {
+      "provider": {
+        "id": "abadfoodslive",
+        "locations": [
+          {
+            "id": "L1"
+          }
+        ]
+      },
+      "items": [
+        {
+          "id": "ITM02561",
+          "fulfillment_ids": [
+            "1"
+          ],
+          "location_ids": [
+            "L1"
+          ],
+          "quantity": {
+            "selected": {
+              "count": 1
+            }
+          },
+          "tags": [
+            {
+              "descriptor": {
+                "code": "BUYER_TERMS"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "PACKAGING_REQ"
+                  },
+                  "value": "i need 1 product with good packaging"
+                },
+                {
+                  "descriptor": {
+                    "code": "ITEM_REQ"
+                  },
+                  "value": "i need 1 item"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "billing": {
+        "name": "ABC Private Limited",
+        "address": "Cecil Street, Proxtera Pte. Ltd., Keck Seng Tower, Singapore",
+        "state": {
+          "name": "Singapore"
+        },
+        "city": {
+          "name": "Singapore"
+        },
+        "tax_id": "TAXSARO101",
+        "email": "saravanan@proxtera.com",
+        "phone": "+918870323539"
+      },
+      "fulfillments": [
+        {
+          "id": "1",
+          "type": "Delivery",
+          "stops": [
+            {
+              "type": "end",
+              "location": {
+                "gps": "1.2804385, 103.8489962",
+                "address": "Cecil Street, Proxtera Pte. Ltd., Keck Seng Tower, Singapore",
+                "city": {
+                  "name": "Singapore"
+                },
+                "country": {
+                  "code": "SGP"
+                },
+                "area_code": "069535",
+                "state": {
+                  "name": "Singapore"
+                }
+              },
+              "contact": {
+                "phone": "+918870323539",
+                "email": "saravanan@proxtera.com"
+              }
+            }
+          ],
+          "tags": [
+            {
+              "descriptor": {
+                "code": "DELIVERY_TERMS"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "INCOTERMS"
+                  },
+                  "value": "DDP"
+                },
+                {
+                  "descriptor": {
+                    "code": "NAMED_PLACE_OF_DELIVERY"
+                  },
+                  "value": "Singapore"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "payments": [
+        {
+          "type": "POST-FULFILLMENT",
+          "collected_by": "BPP"
+        }
+      ],
+      "tags": [
+        {
+          "descriptor": {
+            "code": "buyer_id"
+          },
+          "list": [
+            {
+              "descriptor": {
+                "code": "buyer_id_code"
+              },
+              "value": "tin"
+            },
+            {
+              "descriptor": {
+                "code": "buyer_id_no"
+              },
+              "value": "TAXSARO101"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

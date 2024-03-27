@@ -1,0 +1,62 @@
+{
+  "context": {
+    "domain": "ONDC:RET10",
+    "location": {
+      "city": {
+        "code": "std:999"
+      },
+      "country": {
+        "code": "IND"
+      }
+    },
+    "action": "on_search",
+    "version": "2.0.2",
+    "bap_id": "devapi.proxtera.app",
+    "bap_uri": "https://devapi.proxtera.app/ondc",
+    "bpp_id": "preprod-bpp.dbs.digiit.io",
+    "bpp_uri": "https://preprod-bpp.dbs.digiit.io",
+    "transaction_id": "849e9952-1a24-44e2-a34d-13100e644b32",
+    "message_id": "cf41978e-2fb2-422a-9410-549537ab20c1",
+    "timestamp": "2024-03-27T07:21:40.7731054Z",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "catalog": {
+      "fulfillments": [
+        {
+          "id": "1",
+          "type": "Delivery"
+        },
+        {
+          "id": "2",
+          "type": "Self-Pickup"
+        }
+      ],
+      "payments": [
+        {
+          "id": "1",
+          "type": "ON-FULFILLMENT"
+        },
+        {
+          "id": "2",
+          "type": "PRE-FULFILLMENT"
+        },
+        {
+          "id": "3",
+          "type": "POST-FULFILLMENT"
+        }
+      ],
+      "descriptor": {
+        "name": "dbs",
+        "short_desc": "dbs",
+        "long_desc": "dbs",
+        "images": [
+          {
+            "url": "https://97digiistorage183.blob.core.windows.net/organization/organizationunit/dbs90x.png"
+          }
+        ]
+      },
+      "providers": []
+    }
+  }
+}

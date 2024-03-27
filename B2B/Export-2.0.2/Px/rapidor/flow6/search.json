@@ -1,0 +1,85 @@
+{
+  "context": {
+    "domain": "ONDC:RET10",
+    "location": {
+      "city": {
+        "code": "std:999"
+      },
+      "country": {
+        "code": "IND"
+      }
+    },
+    "version": "2.0.2",
+    "action": "search",
+    "bap_id": "devapi.proxtera.app",
+    "bap_uri": "https://devapi.proxtera.app/ondc",
+    "transaction_id": "6ae0eafe-d818-472b-b872-7dba20f30ae9",
+    "message_id": "7a3e94d5-626d-4fe7-9aad-b9f9e8dd5ea0",
+    "timestamp": "2024-03-27T08:43:23.656Z",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "intent": {
+      "item": {
+        "descriptor": {
+          "name": "chicken breast"
+        }
+      },
+      "fulfillment": {
+        "type": "Delivery",
+        "stops": [
+          {
+            "type": "end",
+            "location": {
+              "gps": "1.290270, 103.851959",
+              "area_code": "238858"
+            }
+          }
+        ]
+      },
+      "payment": {
+        "type": "ON-FULFILLMENT"
+      },
+      "tags": [
+        {
+          "descriptor": {
+            "code": "bap_terms"
+          },
+          "list": [
+            {
+              "descriptor": {
+                "code": "finder_fee_type"
+              },
+              "value": "percent"
+            },
+            {
+              "descriptor": {
+                "code": "finder_fee_amount"
+              },
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "descriptor": {
+            "code": "buyer_id"
+          },
+          "list": [
+            {
+              "descriptor": {
+                "code": "buyer_id_code"
+              },
+              "value": "tin"
+            },
+            {
+              "descriptor": {
+                "code": "buyer_id_no"
+              },
+              "value": "TAXSARO101"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

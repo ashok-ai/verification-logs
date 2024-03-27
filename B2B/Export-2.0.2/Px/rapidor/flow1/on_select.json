@@ -1,0 +1,172 @@
+{
+  "context": {
+    "domain": "ONDC:RET10",
+    "location": {
+      "city": {
+        "code": "std:999"
+      },
+      "country": {
+        "code": "IND"
+      }
+    },
+    "action": "on_select",
+    "version": "2.0.2",
+    "transaction_id": "1d41a4c4-1a3c-4114-b14e-19f0f363a76d",
+    "message_id": "92cfeecb-35e1-4fe8-9df5-23118399f77d",
+    "timestamp": "2024-03-27T07:08:58.961Z",
+    "bap_id": "devapi.proxtera.app",
+    "bap_uri": "https://devapi.proxtera.app/ondc",
+    "bpp_id": "ondcpreprodb2b.rapidor.co",
+    "bpp_uri": "https://ondcpreprodb2b.rapidor.co/v1/ondc/seller",
+    "ttl": "P3D"
+  },
+  "message": {
+    "order": {
+      "provider": {
+        "id": "abadfoodslive",
+        "locations": [
+          {
+            "id": "L1"
+          }
+        ]
+      },
+      "items": [
+        {
+          "id": "ITM05187",
+          "fulfillment_ids": [
+            "1"
+          ],
+          "location_ids": [
+            "L1"
+          ],
+          "quantity": {
+            "selected": {
+              "count": 1
+            }
+          },
+          "tags": [
+            {
+              "descriptor": {
+                "code": "BUYER_TERMS"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "PACKAGING_REQ"
+                  },
+                  "value": "test"
+                },
+                {
+                  "descriptor": {
+                    "code": "ITEM_REQ"
+                  },
+                  "value": "test"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "payments": [
+        {
+          "type": "POST-FULFILLMENT",
+          "collected_by": "BPP"
+        }
+      ],
+      "fulfillments": [
+        {
+          "id": "1",
+          "@ondc/org/provider_name": "Rapidor",
+          "tracking": false,
+          "@ondc/org/category": "Standard Delivery",
+          "@ondc/org/TAT": "P3D",
+          "state": {
+            "descriptor": {
+              "code": "Serviceable"
+            }
+          }
+        }
+      ],
+      "quote": {
+        "breakup": [
+          {
+            "title": "CHICKEN B/L BREAST 10X2KG NET AFS ASSRTD",
+            "@ondc/org/item_id": "ITM05187",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "330.00"
+            },
+            "@ondc/org/item_quantity": {
+              "count": 1
+            },
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "330.00"
+              },
+              "quantity": {
+                "available": {
+                  "count": "100"
+                },
+                "maximum": {
+                  "count": "100"
+                }
+              }
+            }
+          },
+          {
+            "title": "Tax",
+            "@ondc/org/item_id": "ITM05187",
+            "@ondc/org/title_type": "tax",
+            "price": {
+              "currency": "INR",
+              "value": "16.50"
+            }
+          },
+          {
+            "title": "Discount",
+            "@ondc/org/item_id": "ITM05187",
+            "@ondc/org/title_type": "discount",
+            "price": {
+              "currency": "INR",
+              "value": "-0.00"
+            }
+          },
+          {
+            "title": "Delivery Charge",
+            "@ondc/org/item_id": "1",
+            "@ondc/org/title_type": "delivery",
+            "price": {
+              "currency": "INR",
+              "value": "0.00"
+            }
+          },
+          {
+            "title": "Convenience Fee",
+            "@ondc/org/item_id": "1",
+            "@ondc/org/title_type": "misc",
+            "price": {
+              "currency": "INR",
+              "value": "0.00"
+            }
+          },
+          {
+            "title": "Packing",
+            "@ondc/org/item_id": "1",
+            "@ondc/org/title_type": "packing",
+            "price": {
+              "currency": "INR",
+              "value": "0.00"
+            }
+          }
+        ],
+        "price": {
+          "currency": "INR",
+          "value": "346.50"
+        },
+        "ttl": "P3D"
+      }
+    }
+  }
+}
