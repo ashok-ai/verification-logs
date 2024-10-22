@@ -6,23 +6,22 @@
         "bpp_id": "shipdh.in",
         "bpp_uri": "https://shipdh.in/ondc/bpp/api/",
         "country": "IND",
-        "city": "std:022",
-        "ttl": "PT30S",
+        "city": "std:080",
         "domain": "nic2004:60232",
         "core_version": "1.0.0",
-        "transaction_id": "c900d42f-b904-5ca8-8e88-130b3cf1d82d",
-        "message_id": "3c31296e-dae8-4c64-b619-5ebbca302a1b",
-        "timestamp": "2023-08-01T10:57:16.667Z"
+        "transaction_id": "351029bc-17fd-598d-a9c2-e59c8a851eff",
+        "message_id": "2f97825e-2d57-49cf-8107-93b026fbcf63",
+        "timestamp": "2023-09-15T10:53:15.137Z"
     },
     "message": {
         "issue": {
-            "id": "9463264c-d07d-4a47-bf10-4c511c7a9a14",
+            "id": "1872aeae-ffb7-4f78-bb33-a567f72095cc",
             "issue_actions": {
                 "respondent_actions": [
                     {
                         "respondent_action": "PROCESSING",
                         "short_desc": "Complaint is being processed",
-                        "updated_at": "2023-08-01T10:57:16.528Z",
+                        "updated_at": "2023-09-15T10:53:14.681Z",
                         "updated_by": {
                             "org": {
                                 "name": "preprod-ondc.viranc.com/p/v1/store::nic2004:52110"
@@ -40,7 +39,7 @@
                     {
                         "respondent_action": "CASCADED",
                         "short_desc": "Complaint cascaded",
-                        "updated_at": "2023-08-01T10:57:16.667Z",
+                        "updated_at": "2023-09-15T10:53:14.819Z",
                         "updated_by": {
                             "org": {
                                 "name": "preprod-ondc.viranc.com/p/v1/store::nic2004:60232"
@@ -58,25 +57,25 @@
                     {
                         "respondent_action": "PROCESSING",
                         "short_desc": "Complaint is being processed",
-                        "updated_at": "2023-08-01T10:57:16.667Z",
+                        "updated_at": "2023-09-15T10:53:15.137Z",
                         "updated_by": {
                             "org": {
                                 "name": "shipdh.in::nic2004:60232"
                             },
                             "contact": {
-                                "phone": "9971394047",
-                                "email": "cascadedcounterpartyapp@cascadapp.com"
+                                "phone": "9875082482",
+                                "email": "pratham@shipdelight.com"
                             },
                             "person": {
-                                "name": "Jimmy Doe"
+                                "name": "Pratham Sharma"
                             }
                         },
                         "cascaded_level": 2
                     }
                 ]
             },
-            "created_at": "2023-08-01T10:57:15.749Z",
-            "updated_at": "2023-08-01T10:57:16.667Z"
+            "created_at": "2023-09-15T10:53:13.728Z",
+            "updated_at": "2023-09-15T10:53:15.137Z"
         }
     }
 }

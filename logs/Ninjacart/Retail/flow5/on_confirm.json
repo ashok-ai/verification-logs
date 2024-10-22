@@ -2,187 +2,136 @@
   "context": {
     "domain": "nic2004:52110",
     "country": "IND",
-    "city": "std:080",
+    "city": "std:020",
     "action": "on_confirm",
     "core_version": "1.1.0",
     "bap_id": "buyer-app-preprod.ondc.org",
     "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
     "bpp_id": "ondc-seller-api.trafyn.site",
     "bpp_uri": "https://ondc-seller-api.trafyn.site/",
-    "transaction_id": "7a974bef-74bd-422e-9011-c48bfa99920c",
-    "message_id": "b6c0ce22-5694-461f-ace6-f0ae01b8500b",
-    "timestamp": "2023-07-27T06:11:14.786Z",
-    "ttl": "PT30S"
+    "transaction_id": "306dc2de-bf0f-42cc-a4e3-c0c6a7a3d8ec",
+    "message_id": "45b69c10-0b2a-4d6e-ad9a-d8967bf4ec59",
+    "timestamp": "2023-08-27T12:58:59.829Z"
   },
   "message": {
     "order": {
-      "id": "2023-07-27-783478",
-      "state": "Created",
+      "id": "2023-08-27-456661",
+      "state": "Accepted",
       "provider": {
-        "id": "1734045",
+        "id": "1714860",
         "rateable": true,
-        "locations": [
-          {
-            "id": "NC-location-1734045"
-          }
-        ]
+        "locations": [{ "id": "NC-location-1714860" }]
       },
-      "tags": {},
       "items": [
         {
-          "id": "019d9dc2-9d3f-48cb-a896-29ad5430e301",
-          "fulfillment_id": "f5aefff8-2d15-4904-8ee4-8ecee56ac929",
-          "quantity": {
-            "count": 2
-          }
+          "id": "8e17ff31-7c18-4ea1-b35a-91fba4d92171",
+          "fulfillment_id": "5677a122-a12e-4381-825a-f02037e82995",
+          "quantity": { "count": 2 }
         },
         {
-          "id": "43ec1346-4b23-4630-8720-fd6d75fff469",
-          "fulfillment_id": "f5aefff8-2d15-4904-8ee4-8ecee56ac929",
-          "quantity": {
-            "count": 2
-          }
+          "id": "095de77d-650e-494a-81ea-7878963c372f",
+          "fulfillment_id": "5677a122-a12e-4381-825a-f02037e82995",
+          "quantity": { "count": 3 }
         }
       ],
       "billing": {
-        "name": "anwar basha",
+        "name": "Subhendu Maji",
         "address": {
-          "name": "anwar basha",
-          "building": "we work",
-          "locality": "darga street",
-          "city": "Bengaluru",
-          "state": "Karnataka",
+          "name": "Subhendu Maji",
+          "building": "115 13th main",
+          "locality": "Hadapsar Industrial Estate",
+          "city": "Pune",
+          "state": "Maharashtra",
           "country": "IND",
-          "area_code": "560024"
+          "area_code": "411013"
         },
-        "email": "sbasha@ninjacart.com",
-        "phone": "9966775535",
-        "created_at": "2023-07-27T06:11:03.347Z",
-        "updated_at": "2023-07-27T06:11:03.347Z"
+        "email": "subhendu@ninjacart.com",
+        "phone": "9999999991",
+        "created_at": "2023-08-27T12:58:23.464Z",
+        "updated_at": "2023-08-27T12:58:23.464Z"
       },
       "fulfillments": [
         {
-          "id": "f5aefff8-2d15-4904-8ee4-8ecee56ac929",
+          "id": "5677a122-a12e-4381-825a-f02037e82995",
           "type": "Delivery",
-          "@ondc/org/provider_name": "LoadShare Delivery",
-          "state": {
-            "descriptor": {
-              "code": "Pending"
-            }
-          },
+          "@ondc/org/provider_name": "SHREE MARUTI INTEGRATED LOGISTICS LIMITED",
+          "state": { "descriptor": { "code": "Pending" } },
           "tracking": false,
           "start": {
             "location": {
-              "id": "1734045",
+              "id": "NC-location-1714860",
               "descriptor": {
-                "name": "Ninjacart Seller 4"
+                "name": "Ninjacart seller 1"
               },
-              "gps": "13.0529125,77.60148590000001",
-              "address": {
-                "name": "Ninjacart Seller 4",
-                "building": "Yelahanka",
-                "locality": "Yelahanka",
-                "city": "Yelahanka",
-                "state": "Karnataka",
-                "country": "IND",
-                "area_code": "560024"
-              }
+              "gps": "18.509788,73.912514"
             },
-            "contact": {
-              "phone": "9932716853",
-              "email": "test@ninjacart.com",
-              "tags": {}
-            },
-            "person": {
-              "name": "Ninjacart Seller 4",
-              "tags": {}
-            }
-          },
-          "end": {
-            "location": {
-              "gps": "13.041014, 77.596686",
-              "address": {
-                "name": "anwar basha",
-                "building": "we work",
-                "locality": "darga street",
-                "city": "Bengaluru",
-                "state": "Karnataka",
-                "country": "IND",
-                "area_code": "560024"
+            "time": {
+              "range": {
+                "start": "2023-08-27T14:02:19.129Z",
+                "end": "2023-08-27T14:02:29.129Z"
               }
             },
             "contact": {
               "phone": "9966775535",
-              "email": "sbasha@ninjacart.com",
-              "tags": {}
+              "email": "ondc-support@ninjacart.com"
             },
-            "person": {
-              "name": "anwar basha",
-              "tags": {}
-            }
+            "person": { "name": "Ninjacart seller 1" }
           },
-          "tags": {}
+          "end": {
+            "location": {
+              "gps": "18.507910, 73.917325",
+              "address": {
+                "name": "Subhendu Maji",
+                "building": "115 13th main",
+                "locality": "Hadapsar Industrial Estate",
+                "city": "Pune",
+                "state": "Maharashtra",
+                "country": "IND",
+                "area_code": "411013"
+              }
+            },
+            "time": {
+              "range": {
+                "start": "2023-08-27T23:02:19.129Z",
+                "end": "2023-08-27T23:02:29.129Z"
+              }
+            },
+            "contact": {
+              "phone": "9999999991",
+              "email": "subhendu@ninjacart.com"
+            },
+            "person": { "name": "Subhendu Maji" }
+          }
         }
       ],
       "quote": {
-        "price": {
-          "currency": "INR",
-          "value": "121.0"
-        },
+        "price": { "currency": "INR", "value": "105.00" },
         "breakup": [
           {
-            "@ondc/org/item_id": "019d9dc2-9d3f-48cb-a896-29ad5430e301",
-            "@ondc/org/item_quantity": {
-              "count": 2
-            },
+            "@ondc/org/item_id": "8e17ff31-7c18-4ea1-b35a-91fba4d92171",
+            "@ondc/org/item_quantity": { "count": 2 },
             "@ondc/org/title_type": "item",
             "item": {
-              "price": {
-                "currency": "INR",
-                "value": "20.0"
-              }
+              "price": { "currency": "INR", "value": "20.00" }
             },
-            "title": "Spring onion",
-            "price": {
-              "currency": "INR",
-              "value": "40.0"
-            }
+            "title": "Potato (local)",
+            "price": { "currency": "INR", "value": "40.00" }
           },
           {
-            "@ondc/org/item_id": "43ec1346-4b23-4630-8720-fd6d75fff469",
-            "@ondc/org/item_quantity": {
-              "count": 2
-            },
+            "@ondc/org/item_id": "095de77d-650e-494a-81ea-7878963c372f",
+            "@ondc/org/item_quantity": { "count": 3 },
             "@ondc/org/title_type": "item",
             "item": {
-              "price": {
-                "currency": "INR",
-                "value": "25.0"
-              }
+              "price": { "currency": "INR", "value": "10.00" }
             },
-            "title": "Onion - Graded (Local)",
-            "price": {
-              "currency": "INR",
-              "value": "50.0"
-            }
+            "title": "Tomato (hybrid) - Standard",
+            "price": { "currency": "INR", "value": "30.00" }
           },
           {
-            "@ondc/org/item_id": "f5aefff8-2d15-4904-8ee4-8ecee56ac929",
-            "@ondc/org/title_type": "packing",
-            "title": "Packing charges",
-            "price": {
-              "currency": "INR",
-              "value": "30.0"
-            }
-          },
-          {
-            "@ondc/org/item_id": "f5aefff8-2d15-4904-8ee4-8ecee56ac929",
+            "@ondc/org/item_id": "5677a122-a12e-4381-825a-f02037e82995",
             "@ondc/org/title_type": "delivery",
             "title": "Delivery charges",
-            "price": {
-              "currency": "INR",
-              "value": "1.00"
-            }
+            "price": { "currency": "INR", "value": "35.00" }
           }
         ],
         "ttl": "PT30S"
@@ -191,8 +140,8 @@
         "uri": "https://juspay.in/",
         "tl_method": "http/get",
         "params": {
-          "transaction_id": "7a974bef-74bd-422e-9011-c48bfa99920c",
-          "amount": "121",
+          "transaction_id": "306dc2de-bf0f-42cc-a4e3-c0c6a7a3d8ec",
+          "amount": "105",
           "currency": "INR"
         },
         "type": "ON-ORDER",
@@ -207,15 +156,15 @@
             "settlement_type": "neft",
             "settlement_bank_account_no": "1234567890",
             "settlement_ifsc_code": "ICIC0001111",
-
+            "upi_address": "upi@ninjcart.com",
             "bank_name": "ICICI BANK",
             "branch_name": "Bellandur branch",
             "beneficiary_name": "Ninjacart"
           }
         ]
       },
-      "created_at": "2023-07-27T06:11:11.021Z",
-      "updated_at": "2023-07-27T06:11:14.786Z"
+      "created_at": "2023-08-27T12:58:57.760Z",
+      "updated_at": "2023-08-27T12:58:59.829Z"
     }
   }
 }
